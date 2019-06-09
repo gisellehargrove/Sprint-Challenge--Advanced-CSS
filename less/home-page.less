@@ -12,6 +12,10 @@
       padding:0 15px;
     }
 
+    img {
+      .border-radius(5px);
+    }
+
   }
 
   .space-images {
@@ -22,7 +26,7 @@
     img {
       width: 28%;
       margin: 20px 2.5%;
-      border-radius: 20px;
+      .border-radius(20px);
       height: 100%;
     }
   }
@@ -58,16 +62,8 @@
       }
 
       .btn {
-        border: 1px solid black;
-        border-radius: 5px;
-        height: 40px;
-        width: 100px;
-        text-align: center;
-        background-color: @btn-bg-color;
-        font-family: 'Russo One', sans-serif;
-        color: white;
-        font-size: large;
-        padding: 10px;
+        .button(40px, 100px);
+        .border-radius(5px);
       }
     }
 
@@ -78,7 +74,7 @@
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        .border-radius(10px);
       }
     }
   }
