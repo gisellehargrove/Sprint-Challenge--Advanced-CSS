@@ -5,13 +5,23 @@ nav {
 
   .main-header {
     margin: 0px auto;
+    
     h1 {
       font-size: 50px;
+
+      @media @phone {
+        font-size: 40px;
+        margin: 10px 0px;
+      }
     }
   }
 
   a {
     .anchors();
+
+    @media @phone {
+      font-size: 15px;
+    }
   }
 
   .nav-links{
