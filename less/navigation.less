@@ -1,1 +1,28 @@
 // Navigation code here
+
+nav {
+  font: @nav-font;
+  height: 100px;
+  background-color: @nav-bg;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .main-header {
+    margin: 0px auto;
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: @header-font-color;
+    font-size: 20px;
+    margin: 0px 20px;
+  }
+
+  .nav-links{
+    margin: 15px auto;
+  }
+}
