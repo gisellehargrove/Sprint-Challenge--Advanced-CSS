@@ -77,6 +77,10 @@
     .walk-text {
       width: 50%;
 
+      @media @phone {
+        width: 100%;
+      }
+
       h3 {
         margin-bottom: 10px;
       }
@@ -88,6 +92,11 @@
       .btn {
         .button(40px, 100px);
         .border-radius(5px);
+
+        @media @phone {
+          .button(60px, 100%);
+          padding: 20px;
+        }
       }
     }
 

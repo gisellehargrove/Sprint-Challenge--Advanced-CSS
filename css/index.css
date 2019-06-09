@@ -281,6 +281,11 @@ footer {
 .home .walk .walk-text {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
 }
@@ -302,6 +307,24 @@ footer {
 .home .walk .walk-text .btn:hover {
   background-color: #F6F7F8;
   color: #22283A;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    border: 1px solid black;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: #22283A;
+    font-family: 'Russo One', sans-serif;
+    color: white;
+    font-size: large;
+    padding: 10px;
+    padding: 20px;
+  }
+  .home .walk .walk-text .btn:hover {
+    background-color: #F6F7F8;
+    color: #22283A;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
