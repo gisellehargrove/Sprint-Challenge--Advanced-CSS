@@ -1,1 +1,38 @@
 // Mixins Here
+.nav {
+  font: @nav-font;
+  height: 100px;
+  background-color: @nav-bg;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.anchors {
+  text-decoration: none;
+  color: @header-font-color;
+  font-size: 20px;
+  margin: 0px 20px;
+}
+
+.button(@height, @width) {
+  border: 1px solid black;
+  height: @height;
+  width: @width;
+  text-align: center;
+  background-color: @btn-bg-color;
+  font-family: 'Russo One', sans-serif;
+  color: white;
+  font-size: large;
+  padding: 10px;
+
+  &:hover {
+    background-color: @porcelain;
+    color: @btn-bg-color;
+  }
+}
+
+/* parametric mixins */
+.border-radius(@radius) {
+  border-radius: @radius;
+}
